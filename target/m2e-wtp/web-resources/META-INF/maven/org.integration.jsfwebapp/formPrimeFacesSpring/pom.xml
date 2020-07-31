@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" 
 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
@@ -5,13 +6,20 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/x
   <groupId>org.integration.jsfwebapp</groupId>
   <artifactId>formPrimeFacesSpring</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-
   <packaging>war</packaging>
+  
+  <properties>
+  <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+  </properties>
+  
   <dependencies>
   	<dependency>
   		<groupId>javax.servlet</groupId>
   		<artifactId>javax.servlet-api</artifactId>
   		<version>4.0.0</version>
+  		<scope>compile</scope>
   	</dependency>
   	<dependency>
   		<groupId>org.primefaces</groupId>
@@ -24,12 +32,12 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/x
   		<version>2.3.9</version>
   	</dependency>
   	<!-- https://mvnrepository.com/artifact/com.itextpdf.tool/xmlworker -->
-	<dependency>
-    	<groupId>com.itextpdf.tool</groupId>
-    	<artifactId>xmlworker</artifactId>
-    	<version>5.5.11</version>
-	</dependency>
-	
-  	
+
+
+  	<dependency>
+  		<groupId>org.hibernate</groupId>
+  		<artifactId>hibernate-core</artifactId>
+  		<version>5.3.6.Final</version>
+  	</dependency>
   </dependencies>
 </project>
